@@ -10,6 +10,10 @@ export interface Options {
 const HELP = `
 git-changelog
 
+# scope!: breaking changes
+# scope: description
+# scope?: ignore
+# chore: ignore start with chore
 git changelog [from] [to]
 
 Options

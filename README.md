@@ -11,6 +11,10 @@ pnpm -g add @yme/git-changelog
 ```
 git-changelog
 
+# scope!: breaking changes
+# scope: description
+# scope?: ignore
+# chore: ignore start with chore
 git changelog [from] [to]
 
 Options
