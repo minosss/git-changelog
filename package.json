@@ -19,7 +19,8 @@
 	],
 	"scripts": {
 		"build": "esbuild src/index.ts --target=node14 --outdir=dist --platform=node --bundle",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"prepublishOnly": "pnpm run build"
 	},
 	"dependencies": {
 		"@yme/argv": "^0.1.2"
@@ -34,5 +35,8 @@
 		"prettier": "^2.8.3",
 		"tsup": "^6.5.0",
 		"typescript": "^4.9.4"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
