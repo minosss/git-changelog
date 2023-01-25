@@ -1,7 +1,7 @@
 import {execSync} from 'node:child_process';
 
 function run(command: string) {
-	const out = execSync(command, {encoding: 'utf8', stdio: 'inherit'});
+	const out = execSync(command, {encoding: 'utf8'});
 	return out.trim();
 }
 
