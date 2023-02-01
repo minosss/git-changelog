@@ -1,7 +1,7 @@
 {
 	"name": "@yme/git-changelog",
 	"description": "simply generate changelog based on commit message",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "mino",
 	"repository": "minosss/git-changelog",
 	"license": "MIT",
