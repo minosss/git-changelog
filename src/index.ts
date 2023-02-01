@@ -16,8 +16,12 @@ git-changelog
 # chore: ignore start with chore
 git changelog [from] [to]
 
+# Print usage
+git changelog help
+
 Options
 
+--help                  print usage
 --compare		include vertion compare url
 --hash			include commit url
 `;
@@ -28,7 +32,7 @@ export default async function main(args: string[]) {
 	const [from, to] = argv._;
 	const {compare = true, hash = true, help} = argv;
 
-	if (help) {
+	if (from === 'help' || help) {
 		console.log(HELP);
 		return;
 	}
