@@ -13,11 +13,11 @@ function getOriginUrl() {
 	if (remoteList.length === 0) return;
 
 	// ssh
-	let match = remoteList[0]?.match(/git@(?<domain>.*?):(?<repo>.*?\/.*?)\.git/);
+	let match = remoteList[0]?.match(/git@(?<domain>.+?):(?<repo>.+?\/.+?)\.git /);
 
 	// or https
 	if (match == null) {
-		match = remoteList[0]?.match(/https:\/\/(?<domain>.*?)\/(?<repo>.*?\/.*?)\.git/);
+		match = remoteList[0]?.match(/https:\/\/(?<domain>.+?)\/(?<repo>.+?\/.+?)(\.git)? /);
 	}
 
 	if (match == null) return;
